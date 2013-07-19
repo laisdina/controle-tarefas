@@ -6,6 +6,7 @@
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
   <Events>
     <EventHandler event="internalFrameClosed" listener="javax.swing.event.InternalFrameListener" parameters="javax.swing.event.InternalFrameEvent" handler="formInternalFrameClosed"/>
@@ -45,7 +46,7 @@
               <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="45" max="32767" attributes="0"/>
+              <EmptySpace pref="25" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -89,7 +90,7 @@
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Este produto foi desenvolvido na disciplina  de T&#xe9;cnicas de Programa&#xe7;&#xe3;o Avan&#xe7;ada (TPA) da Universidade Federal Fluminense (UFF).  Este &#xe9; o exemplo de como deve ser feito o trabalho final da disciplina."/>
+                <Property name="text" type="java.lang.String" value="Este produto foi desenvolvido na disciplina  de T&#xe9;cnicas de Programa&#xe7;&#xe3;o Avan&#xe7;ada (TPA) da Universidade Federal Fluminense (UFF)."/>
               </Properties>
             </Component>
           </SubComponents>
@@ -134,7 +135,7 @@
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Daniel Castellani"/>
+                <Property name="text" type="java.lang.String" value="Alonso Leonardo e Lais Dina"/>
               </Properties>
             </Component>
           </SubComponents>

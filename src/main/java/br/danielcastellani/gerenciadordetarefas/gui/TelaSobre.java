@@ -48,15 +48,15 @@ public class TelaSobre extends javax.swing.JInternalFrame {
             public void internalFrameClosed(javax.swing.event.InternalFrameEvent evt) {
                 formInternalFrameClosed(evt);
             }
-            public void internalFrameClosing(javax.swing.event.InternalFrameEvent evt) {
-            }
-            public void internalFrameDeactivated(javax.swing.event.InternalFrameEvent evt) {
-            }
             public void internalFrameDeiconified(javax.swing.event.InternalFrameEvent evt) {
             }
             public void internalFrameIconified(javax.swing.event.InternalFrameEvent evt) {
             }
             public void internalFrameOpened(javax.swing.event.InternalFrameEvent evt) {
+            }
+            public void internalFrameDeactivated(javax.swing.event.InternalFrameEvent evt) {
+            }
+            public void internalFrameClosing(javax.swing.event.InternalFrameEvent evt) {
             }
         });
 
@@ -65,7 +65,7 @@ public class TelaSobre extends javax.swing.JInternalFrame {
         jTextPane1.setEditable(false);
         jTextPane1.setBackground(new java.awt.Color(240, 240, 240));
         jTextPane1.setBorder(null);
-        jTextPane1.setText("Este produto foi desenvolvido na disciplina  de Técnicas de Programação Avançada (TPA) da Universidade Federal Fluminense (UFF).  Este é o exemplo de como deve ser feito o trabalho final da disciplina.");
+        jTextPane1.setText("Este produto foi desenvolvido na disciplina  de Técnicas de Programação Avançada (TPA) da Universidade Federal Fluminense (UFF).");
         jScrollPane2.setViewportView(jTextPane1);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -84,7 +84,7 @@ public class TelaSobre extends javax.swing.JInternalFrame {
         jTextPane2.setEditable(false);
         jTextPane2.setBackground(new java.awt.Color(240, 240, 240));
         jTextPane2.setBorder(null);
-        jTextPane2.setText("Daniel Castellani");
+        jTextPane2.setText("Alonso Leonardo e Lais Dina");
         jScrollPane3.setViewportView(jTextPane2);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -152,7 +152,7 @@ public class TelaSobre extends javax.swing.JInternalFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(45, Short.MAX_VALUE))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
 
         pack();
