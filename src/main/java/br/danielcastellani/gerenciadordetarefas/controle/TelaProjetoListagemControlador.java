@@ -10,6 +10,7 @@ import br.danielcastellani.gerenciadordetarefas.gui.ButtonProjetoEditar;
 import br.danielcastellani.gerenciadordetarefas.gui.ButtonProjetoRemover;
 import br.danielcastellani.gerenciadordetarefas.gui.TelaProjetoListagem;
 import br.danielcastellani.gerenciadordetarefas.modelo.Projeto;
+import java.awt.Container;
 import java.awt.GridLayout;
 import java.util.List;
 import javax.swing.JLabel;
@@ -22,7 +23,7 @@ import javax.swing.JPanel;
 public class TelaProjetoListagemControlador {
 
     private TelaProjetoListagem telaProjetoListagem;
-    private String[] cabecalho = {"Nome", "Descrição", "Editar", "Remover"};
+    private String[] cabecalho = {"Nome", "Descrição", "Ações"};
 
     public void listarProjetos() {
         if (telaProjetoListagem == null) {
@@ -54,10 +55,22 @@ public class TelaProjetoListagemControlador {
             }
 
             for (Projeto projeto : projetos) {
+                
+               listagem.add(new JLabel(projeto.getNome()));
+               listagem.add(new JLabel(projeto.getDescricao()));
+            
+               Container c = new JPanel();
+               c.setLayout(new GridLayout(1,2));
+               c.add(new ButtonProjetoEditar(projeto));
+               c.add(new ButtonProjetoRemover(projeto));
+            
+               listagem.add(c);
+               
+                /*
                 listagem.add(new JLabel(projeto.getNome()));
                 listagem.add(new JLabel(projeto.getDescricao()));
                 listagem.add(new ButtonProjetoEditar(projeto));
-                listagem.add(new ButtonProjetoRemover(projeto));
+                listagem.add(new ButtonProjetoRemover(projeto));*/
             }
         }
         telaProjetoListagem.pack();
