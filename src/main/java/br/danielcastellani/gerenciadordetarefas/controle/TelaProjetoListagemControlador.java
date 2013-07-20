@@ -8,6 +8,7 @@ import br.danielcastellani.gerenciadordetarefas.bd.BancoDeDados;
 import br.danielcastellani.gerenciadordetarefas.contexto.Contexto;
 import br.danielcastellani.gerenciadordetarefas.gui.ButtonProjetoEditar;
 import br.danielcastellani.gerenciadordetarefas.gui.ButtonProjetoRemover;
+import br.danielcastellani.gerenciadordetarefas.gui.ButtonProjetoVer;
 import br.danielcastellani.gerenciadordetarefas.gui.TelaProjetoListagem;
 import br.danielcastellani.gerenciadordetarefas.modelo.Projeto;
 import java.awt.Container;
@@ -60,17 +61,12 @@ public class TelaProjetoListagemControlador {
                listagem.add(new JLabel(projeto.getDescricao()));
             
                Container c = new JPanel();
-               c.setLayout(new GridLayout(1,2));
+               c.setLayout(new GridLayout(1,3));
+               c.add(new ButtonProjetoVer(projeto));
                c.add(new ButtonProjetoEditar(projeto));
                c.add(new ButtonProjetoRemover(projeto));
             
                listagem.add(c);
-               
-                /*
-                listagem.add(new JLabel(projeto.getNome()));
-                listagem.add(new JLabel(projeto.getDescricao()));
-                listagem.add(new ButtonProjetoEditar(projeto));
-                listagem.add(new ButtonProjetoRemover(projeto));*/
             }
         }
         telaProjetoListagem.pack();

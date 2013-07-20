@@ -58,6 +58,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenuBar3.add(jMenu6);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(900, 600));
 
         jMenuProjetos.setText("Projetos");
 

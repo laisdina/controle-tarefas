@@ -79,4 +79,7 @@ public class TelaPrincipalControlador {
         TelaProjetoListagemControlador controladorListagem = (TelaProjetoListagemControlador) Contexto.getInstance().get(TelaProjetoListagemControlador.class.getCanonicalName());
         controladorListagem.atualizaListagem();
     }
+    
+    public void verProjeto(Projeto projeto) {
+    }
 }

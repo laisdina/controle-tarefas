@@ -5,6 +5,7 @@
 package br.danielcastellani.gerenciadordetarefas.bd;
 
 import br.danielcastellani.gerenciadordetarefas.modelo.Projeto;
+import br.danielcastellani.gerenciadordetarefas.modelo.Tarefa;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -29,6 +30,7 @@ public class BancoDeDados {
      */
     private BancoDeDados() {
         projetos = new ArrayList<Projeto>();
+   //     tarefas = new ArrayList<Tarefa>();
     }
 
     /**
@@ -42,6 +44,7 @@ public class BancoDeDados {
     }
     //--------------------------------------------------------------------------
     private List<Projeto> projetos;
+   // private List<Tarefa> tarefas;
 //    private static final String ARQUIVO_BD = "GT-DataBase";
 
 //    public void persisteInformacoes() throws IOException {
@@ -67,4 +70,8 @@ public class BancoDeDados {
     public List<Projeto> getListaProjetos() {
         return projetos;
     }
+
+    /*public List<Tarefa> getListaTarefas() {
+        return tarefas;
+    }*/
 }
