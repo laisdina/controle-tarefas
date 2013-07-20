@@ -44,7 +44,7 @@ public class BancoDeDados {
     }
     //--------------------------------------------------------------------------
     private List<Projeto> projetos;
-   // private List<Tarefa> tarefas;
+    private List<Tarefa> tarefas;
 //    private static final String ARQUIVO_BD = "GT-DataBase";
 
 //    public void persisteInformacoes() throws IOException {
@@ -71,7 +71,7 @@ public class BancoDeDados {
         return projetos;
     }
 
-    /*public List<Tarefa> getListaTarefas() {
+    public List<Tarefa> getListaTarefas(Projeto projeto) {
         return tarefas;
-    }*/
+    }
 }

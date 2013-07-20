@@ -6,6 +6,7 @@ package br.danielcastellani.gerenciadordetarefas.gui;
 
 import br.danielcastellani.gerenciadordetarefas.contexto.Contexto;
 import br.danielcastellani.gerenciadordetarefas.controle.TelaTarefaListagemControlador;
+import br.danielcastellani.gerenciadordetarefas.modelo.Projeto;
 
 /**
  *
@@ -13,14 +14,18 @@ import br.danielcastellani.gerenciadordetarefas.controle.TelaTarefaListagemContr
  */
 public class TelaTarefaListagem extends javax.swing.JInternalFrame {
 
-    TelaTarefaListagemControlador controlador;
-    //private TelaTarefa telaTarefa;
+    private TelaTarefaListagemControlador controlador;
+    private Projeto projeto;
 
     /**
      * Creates new form TelaProjetoListagem
      */
-    public TelaTarefaListagem() {
+    public TelaTarefaListagem(Projeto projeto) {
+        this.projeto = projeto;
         initComponents();
+        this.setTitle("Ver Projeto: " + projeto.getNome());
+        controlador = new TelaTarefaListagemControlador(this);
+       Contexto.getInstance().put(controlador.getClass().getCanonicalName(), controlador);
     }
 
     /**
@@ -35,7 +40,7 @@ public class TelaTarefaListagem extends javax.swing.JInternalFrame {
         panelListagem = new javax.swing.JPanel();
 
         setClosable(true);
-        setTitle("Listagem de Tarefas");
+        setTitle(projeto.getNome());
 
         panelListagem.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         panelListagem.setAutoscrolls(true);
@@ -49,7 +54,7 @@ public class TelaTarefaListagem extends javax.swing.JInternalFrame {
         );
         panelListagemLayout.setVerticalGroup(
             panelListagemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 363, Short.MAX_VALUE)
+            .addGap(0, 367, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -89,19 +94,5 @@ public class TelaTarefaListagem extends javax.swing.JInternalFrame {
     public void setPanelListagem(javax.swing.JPanel panelListagem) {
         this.panelListagem = panelListagem;
     }
-    
-    /**
-     * @return the telaProjeto
-    */
-    /*public TelaProjeto getTelaTarefa() {
-        return telaTarefa;
-    }*/
-
-    /**
-     * @param telaProjeto the telaProjeto to set
-     */
-    /*public void setTelaTarefa(TelaTarefa telaTarefa) {
-        this.telaTarefa = telaTarefa;
-    }*/
     
 }

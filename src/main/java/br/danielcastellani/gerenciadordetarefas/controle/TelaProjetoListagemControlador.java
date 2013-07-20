@@ -24,7 +24,7 @@ import javax.swing.JPanel;
 public class TelaProjetoListagemControlador {
 
     private TelaProjetoListagem telaProjetoListagem;
-    private String[] cabecalho = {"Nome", "Descrição", "Ações"};
+    private String[] cabecalho = {"Nome", "Descrição", "", "    Ações",""};
 
     public void listarProjetos() {
         if (telaProjetoListagem == null) {
@@ -56,17 +56,11 @@ public class TelaProjetoListagemControlador {
             }
 
             for (Projeto projeto : projetos) {
-                
-               listagem.add(new JLabel(projeto.getNome()));
-               listagem.add(new JLabel(projeto.getDescricao()));
-            
-               Container c = new JPanel();
-               c.setLayout(new GridLayout(1,3));
-               c.add(new ButtonProjetoVer(projeto));
-               c.add(new ButtonProjetoEditar(projeto));
-               c.add(new ButtonProjetoRemover(projeto));
-            
-               listagem.add(c);
+                listagem.add(new JLabel(projeto.getNome()));
+                listagem.add(new JLabel(projeto.getDescricao()));
+                listagem.add(new ButtonProjetoVer(projeto));
+                listagem.add(new ButtonProjetoEditar(projeto));
+                listagem.add(new ButtonProjetoRemover(projeto));
             }
         }
         telaProjetoListagem.pack();

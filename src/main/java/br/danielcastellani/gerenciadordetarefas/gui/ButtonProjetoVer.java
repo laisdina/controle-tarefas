@@ -30,6 +30,6 @@ public class ButtonProjetoVer extends JButton {
     
     public void verProjeto(java.awt.event.ActionEvent evt) {
         TelaPrincipalControlador controladorTelaPrincipal = (TelaPrincipalControlador) Contexto.getInstance().get(TelaPrincipalControlador.class.getCanonicalName());
-        controladorTelaPrincipal.verProjeto(projeto);
+        controladorTelaPrincipal.exibeTelaTarefasListagem(evt, projeto);
     }
 }
