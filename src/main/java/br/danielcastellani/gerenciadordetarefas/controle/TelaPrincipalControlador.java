@@ -68,6 +68,11 @@ public class TelaPrincipalControlador {
     public void verProjeto(Projeto projeto) {
         TelaTarefaListagemControlador controladorListagem = (TelaTarefaListagemControlador) Contexto.getInstance().get(TelaTarefaListagemControlador.class.getCanonicalName());
         controladorListagem.esconde();
+        
+        if (telaProjetoVer == null) {
+            telaPrincipal.getContentPane().add(telaProjetoVer);
+        }
+        
         telaProjetoVer.setVisible(true);
     }
 

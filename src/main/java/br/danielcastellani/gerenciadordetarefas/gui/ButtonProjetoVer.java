@@ -11,7 +11,7 @@ import javax.swing.JButton;
 
 /**
  *
- * @author Daniel
+ * @author Alonso
  */
 public class ButtonProjetoVer extends JButton {
 
