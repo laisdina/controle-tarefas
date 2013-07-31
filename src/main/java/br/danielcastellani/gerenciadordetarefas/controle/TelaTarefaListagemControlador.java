@@ -65,4 +65,9 @@ public class TelaTarefaListagemControlador {
             telaTarefaListagem.repaint();
         
         }
+        public void atualizaTelaVer(Projeto projeto) {
+                    telaTarefaListagem.setProjeto(projeto);
+                    telaTarefaListagem.getTxtNome().setText(projeto.getNome());
+                    telaTarefaListagem.getTxtDescricao().setText(projeto.getDescricao());
+        }
 }

@@ -74,6 +74,8 @@ public class TelaPrincipalControlador {
         }
         
         telaProjetoVer.setVisible(true);
+        TelaTarefaListagemControlador controladorVer = (TelaTarefaListagemControlador) Contexto.getInstance().get(TelaTarefaListagemControlador.class.getCanonicalName());
+        controladorVer.atualizaTelaVer(projeto);
     }
 
     public void exibeTelaPrincipal() {

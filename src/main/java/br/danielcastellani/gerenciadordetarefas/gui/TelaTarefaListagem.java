@@ -39,13 +39,13 @@ public class TelaTarefaListagem extends javax.swing.JInternalFrame {
 
         scrollPane1 = new java.awt.ScrollPane();
         panelListagem = new javax.swing.JPanel();
-        panel1 = new java.awt.Panel();
-        jLabel1 = new javax.swing.JLabel();
-        panel2 = new java.awt.Panel();
-        jLabel2 = new javax.swing.JLabel();
-        panel3 = new java.awt.Panel();
-        jButton1 = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox();
+        panelTituloProjeto = new java.awt.Panel();
+        TextoTituloProjeto = new javax.swing.JLabel();
+        panelDescricaoProjeto = new java.awt.Panel();
+        TextoDescricaoProjeto = new javax.swing.JLabel();
+        panelBotaoCriarTarefa = new java.awt.Panel();
+        BotaoCriarTarefa = new javax.swing.JButton();
+        ComboBoxFiltro = new javax.swing.JComboBox();
 
         setClosable(true);
         setTitle(projeto.getNome());
@@ -65,64 +65,64 @@ public class TelaTarefaListagem extends javax.swing.JInternalFrame {
             .addGap(0, 174, Short.MAX_VALUE)
         );
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel1.setText(projeto.getNome());
+        TextoTituloProjeto.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        TextoTituloProjeto.setText(projeto.getNome());
 
-        javax.swing.GroupLayout panel1Layout = new javax.swing.GroupLayout(panel1);
-        panel1.setLayout(panel1Layout);
-        panel1Layout.setHorizontalGroup(
-            panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelTituloProjetoLayout = new javax.swing.GroupLayout(panelTituloProjeto);
+        panelTituloProjeto.setLayout(panelTituloProjetoLayout);
+        panelTituloProjetoLayout.setHorizontalGroup(
+            panelTituloProjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTituloProjetoLayout.createSequentialGroup()
                 .addGap(137, 137, 137)
-                .addComponent(jLabel1)
+                .addComponent(TextoTituloProjeto)
                 .addContainerGap(152, Short.MAX_VALUE))
         );
-        panel1Layout.setVerticalGroup(
-            panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE)
+        panelTituloProjetoLayout.setVerticalGroup(
+            panelTituloProjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(TextoTituloProjeto, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE)
         );
 
-        jLabel2.setText(projeto.getDescricao());
+        TextoDescricaoProjeto.setText(projeto.getDescricao());
 
-        javax.swing.GroupLayout panel2Layout = new javax.swing.GroupLayout(panel2);
-        panel2.setLayout(panel2Layout);
-        panel2Layout.setHorizontalGroup(
-            panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelDescricaoProjetoLayout = new javax.swing.GroupLayout(panelDescricaoProjeto);
+        panelDescricaoProjeto.setLayout(panelDescricaoProjetoLayout);
+        panelDescricaoProjetoLayout.setHorizontalGroup(
+            panelDescricaoProjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelDescricaoProjetoLayout.createSequentialGroup()
                 .addGap(153, 153, 153)
-                .addComponent(jLabel2)
+                .addComponent(TextoDescricaoProjeto)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        panel2Layout.setVerticalGroup(
-            panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel2Layout.createSequentialGroup()
+        panelDescricaoProjetoLayout.setVerticalGroup(
+            panelDescricaoProjetoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelDescricaoProjetoLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel2)
+                .addComponent(TextoDescricaoProjeto)
                 .addGap(32, 32, 32))
         );
 
-        jButton1.setText("Criar Tarefa");
+        BotaoCriarTarefa.setText("Criar Tarefa");
 
-        javax.swing.GroupLayout panel3Layout = new javax.swing.GroupLayout(panel3);
-        panel3.setLayout(panel3Layout);
-        panel3Layout.setHorizontalGroup(
-            panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelBotaoCriarTarefaLayout = new javax.swing.GroupLayout(panelBotaoCriarTarefa);
+        panelBotaoCriarTarefa.setLayout(panelBotaoCriarTarefaLayout);
+        panelBotaoCriarTarefaLayout.setHorizontalGroup(
+            panelBotaoCriarTarefaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelBotaoCriarTarefaLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton1)
+                .addComponent(BotaoCriarTarefa)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        panel3Layout.setVerticalGroup(
-            panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel3Layout.createSequentialGroup()
+        panelBotaoCriarTarefaLayout.setVerticalGroup(
+            panelBotaoCriarTarefaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelBotaoCriarTarefaLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton1))
+                .addComponent(BotaoCriarTarefa))
         );
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Todas", "A Fazer", "Fazendo", "Pronto" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        ComboBoxFiltro.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Todas", "A Fazer", "Fazendo", "Pronto" }));
+        ComboBoxFiltro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                ComboBoxFiltroActionPerformed(evt);
             }
         });
 
@@ -132,29 +132,29 @@ public class TelaTarefaListagem extends javax.swing.JInternalFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(panel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panelTituloProjeto, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panelDescricaoProjeto, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(panelListagem, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(panel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(panelBotaoCriarTarefa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(32, 32, 32)
-                                .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                                .addComponent(ComboBoxFiltro, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panelTituloProjeto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panel2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panelDescricaoProjeto, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(panel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(panelBotaoCriarTarefa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ComboBoxFiltro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(panelListagem, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
@@ -163,19 +163,19 @@ public class TelaTarefaListagem extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void ComboBoxFiltroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboBoxFiltroActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_ComboBoxFiltroActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JComboBox jComboBox1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private java.awt.Panel panel1;
-    private java.awt.Panel panel2;
-    private java.awt.Panel panel3;
+    private javax.swing.JButton BotaoCriarTarefa;
+    private javax.swing.JComboBox ComboBoxFiltro;
+    private javax.swing.JLabel TextoDescricaoProjeto;
+    private javax.swing.JLabel TextoTituloProjeto;
+    private java.awt.Panel panelBotaoCriarTarefa;
+    private java.awt.Panel panelDescricaoProjeto;
     private javax.swing.JPanel panelListagem;
+    private java.awt.Panel panelTituloProjeto;
     private java.awt.ScrollPane scrollPane1;
     // End of variables declaration//GEN-END:variables
 
@@ -191,6 +191,28 @@ public class TelaTarefaListagem extends javax.swing.JInternalFrame {
      */
     public void setPanelListagem(javax.swing.JPanel panelListagem) {
         this.panelListagem = panelListagem;
+    }
+    
+    /**
+     * @return the txtDescricao
+     */
+    public javax.swing.JLabel getTxtDescricao() {
+        return TextoDescricaoProjeto;
+    }
+
+    /**
+     * @return the txtNome
+     */
+    public javax.swing.JLabel getTxtNome() {
+        return TextoTituloProjeto;
+    }
+    
+    void atualizaTelaVer(TelaTarefaListagem telaProjeto, Projeto projetoParaVer) {
+        controlador.atualizaTelaVer(projetoParaVer);
+    }
+    
+    public void setProjeto(Projeto projeto) {
+        this.projeto = projeto;
     }
     
 }
