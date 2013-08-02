@@ -162,7 +162,7 @@ public class TelaTarefaListagem extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ComboBoxFiltroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboBoxFiltroActionPerformed
-        // TODO add your handling code here:
+              
     }//GEN-LAST:event_ComboBoxFiltroActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

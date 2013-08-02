@@ -54,6 +54,9 @@ public class TelaTarefaListagemControlador {
             JPanel listagem = telaTarefaListagem.getPanelListagem();
             listagem.setLayout(new GridLayout());
 
+            telaTarefaListagem.setProjeto(projeto);
+            telaTarefaListagem.getTxtNome().setText(projeto.getNome());
+            telaTarefaListagem.getTxtDescricao().setText(projeto.getDescricao());
             //listagem.removeAll();
             //System.gc();
 
